@@ -1,6 +1,6 @@
-## WebServer
+## RestServer
 
-Webserver beta developed in node
+RestServer beta developed in node
 
 ```
 npm install

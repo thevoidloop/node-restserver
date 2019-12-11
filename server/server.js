@@ -10,7 +10,7 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 
-mongoose.connect(process.env.URLDB, (err, res) => {
+mongoose.connect(process.env.URI, (err, res) => {
     if (err) throw err;
     console.log('Base de datos ONLINE');
 });

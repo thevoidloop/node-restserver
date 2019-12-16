@@ -2,8 +2,12 @@ require('./config/config');
 
 const express = require('express');
 const mongoose = require('mongoose');
-const app = require('./routes/usuario');
 
+
+const app = express();
+
+
+app.use(require('./routes'));
 
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);

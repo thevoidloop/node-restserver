@@ -2,9 +2,14 @@ require('./config/config');
 
 const express = require('express');
 const mongoose = require('mongoose');
-
+const path = require('path');
 
 const app = express();
+
+
+// Habilitad la carpeta public
+
+app.use(express.static(path.resolve(__dirname, '../public')));
 
 
 app.use(require('./routes'));
